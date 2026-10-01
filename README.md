@@ -1,4 +1,4 @@
-# ☀️ SolarMove Mobile — Sistema de Monitoreo y Carga Solar
+Markdown# ☀️ SolarMove Mobile — Sistema de Monitoreo y Carga Solar
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
@@ -42,3 +42,9 @@ SolarMove-Mobile/
 ├── assets/                   # Iconos, imágenes y recursos estáticos
 ├── pubspec.yaml              # Gestión de dependencias del proyecto Flutter
 └── README.md                 # Documentación principal del repositorio
+⚙️ Configuración del Entorno e InstalaciónPrerrequisitosTener instalado el Flutter SDK (versión estable posterior a 3.x).Configurar la variable de entorno PATH apuntando al directorio flutter/bin.Contar con un dispositivo Android físico con depuración USB habilitada o un emulador de Android Studio.Instrucciones de Inicio RápidoClonar el repositorio:Bashgit clone [https://github.com/castellanosabel334-stack/SolarMove-Mobile.git](https://github.com/castellanosabel334-stack/SolarMove-Mobile.git)
+cd SolarMove-Mobile
+Instalar dependencias de Flutter:Bashflutter pub get
+Verificar la integridad del entorno:Bashflutter doctor
+Ejecutar la aplicación en modo desarrollo:Bashflutter run
+👥 Equipo de DesarrolloRolIntegranteResponsabilidadesArquitectura & BackendLead Software ArchitectDiseño de la arquitectura del sistema, APIs y estructura de datos.Embedded & HardwareEmbedded EngineerIntegración de microcontroladores (ESP32) y captura de sensores.Frontend & Mobile UIMobile DeveloperDesarrollo de la aplicación en Flutter y diseño de experiencia de usuario (UX).QA & DocumentaciónQA SpecialistMatriz de pruebas, control de riesgos y elaboración del informe técnico.📜 LicenciaEste proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
