@@ -1,31 +1,44 @@
-# SolarMove — App Móvil de Monitoreo y Carga Solar
+# ☀️ SolarMove Mobile — Sistema de Monitoreo y Carga Solar
 
-Plataforma móvil orientada a la micromovilidad eléctrica que permite a los usuarios ubicar estaciones de carga fotovoltaicas, verificar la disponibilidad de conectores en tiempo real y monitorear el estado de batería de su vehículo.
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Licencia](https://img.shields.io/badge/Licencia-MIT-green?style=for-the-badge)
 
-## 👥 Integrantes y Roles
-* **Líder / Product Owner:** [Nombre del integrante] — Coordinación, control de alcance y plan de trabajo.
-* **Analista / Documentación:** Abel Castellanos Cenobio — Definición de problemas, requisitos y documentación técnica.
-* **Diseño UX/UI:** [Nombre del integrante] — Diseños, wireframes y flujo de navegación.
-* **Desarrollo / Integración:** [Nombre del integrante] — Entorno de desarrollo, arquitectura y código ejecutable.
-* **QA / Pruebas:** [Nombre del integrante] — Casos de prueba, control de calidad y gestión de incidencias.
+**SolarMove Mobile** es una aplicación multiplataforma orientada a la micromovilidad eléctrica sostenible. Permite a los usuarios ubicar estaciones de carga fotovoltaicas, verificar la disponibilidad de conectores en tiempo real y monitorear el rendimiento térmico y energético de la batería de su vehículo ligero.
 
-## 🛠️ Tecnología Seleccionada
-* **Lenguaje / Entorno:** Python (Lógica y prototipado base de servicios) / VS Code
-* **Plataforma Objetivo:** Android OS
-* **Recursos del Dispositivo:** GPS (Ubicación), Conectividad de datos y Notificaciones.
+---
 
-## 🚀 Estructura del Proyecto
+## 🚀 Características Principales
+
+- **Monitoreo Energético en Tiempo Real:** Visualización continua del flujo de corriente, voltaje y nivel de carga de la batería.
+- **Red de Estaciones Fotovoltaicas:** Mapa interactivo con disponibilidad de puertos de carga solar e información de telemetría.
+- **Alertas Preventivas:** Sistema de notificaciones automáticas ante descargas críticas (<20%) o fluctuaciones anómalas de voltaje.
+- **Optimizador de Autonomía:** Estimación adaptativa del tiempo restante de viaje según la radiación solar y la carga actual.
+
+---
+
+## 🛠️ Arquitectura y Tecnologías
+
+El proyecto está diseñado bajo una arquitectura modular desacoplada utilizando el ecosistema oficial de **Flutter** y **Dart**:
+
+- **Framework Móvil:** [Flutter SDK](https://flutter.dev/) (Target principal: Android OS)
+- **Lenguaje de Programación:** [Dart](https://dart.dev/)
+- **Protocolo de Comunicación:** WebSockets (Ingesta de telemetría en tiempo real) & REST API
+- **IDE Preferido:** Visual Studio Code con extensiones oficiales de Flutter y Dart
+
+---
+
+## 📂 Estructura del Repositorio
+
 ```text
 SolarMove-Mobile/
-├── main.py             # Script principal de la lógica y simulación de la app
-├── README.md           # Información general y organización del proyecto
-└── .gitignore          # Archivos excluidos del control de versiones
-
-📋 Estado del Proyecto
-[x] Práctica 1: Definición del proyecto, alcance PMF, requisitos e inicio de repositorio base.
-
-[ ] Práctica 2: Diseño funcional, flujo de interfaz (UX/UI) y arquitectura.
-
-[ ] Práctica 3: Programación, integración de módulos y pruebas.
-
-[ ] Práctica 4: Documentación final, empaquetado y estrategia de distribución.
+├── lib/
+│   ├── main.dart             # Punto de entrada de la aplicación Flutter
+│   ├── models/               # Modelos de datos para telemetría y estaciones
+│   ├── screens/              # Vistas de la interfaz (Dashboard, Mapa, Perfil)
+│   ├── services/             # Cliente WebSocket y conexión REST
+│   └── widgets/              # Componentes de UI reutilizables
+├── assets/                   # Iconos, imágenes y recursos estáticos
+├── pubspec.yaml              # Gestión de dependencias del proyecto Flutter
+└── README.md                 # Documentación principal del repositorio
